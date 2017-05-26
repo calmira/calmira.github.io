@@ -42,12 +42,19 @@ Proses web crawler dalam mengunjungi setiap dokumen web disebut dengan web crawl
 Web crawler termasuk kedalam bagian software agent atau yang lebih dikenal dengan istilah program bot. Secara umum crawler memulai prosesnya dengan memberikan daftar sejumlah alamat website untuk dikunjungi, disebut sebagai seeds. Setiap kali sebuah halaman web dikunjungi, crawler akan mencari alamat yang lain yang terdapat didalamnya dan menambahkan kedalam daftar seeds sebelumnya.
 
 Dalam melakukan prosesnya, web crawler juga mempunyai beberapa persoalan yang harus mampu di atasinya. Permasalahan tersebut mencakup:
+
 •	Halaman mana yang harus dikunjungi terlebih dahulu.
+
 •	Aturan dalam proses mengunjungi kembali sebuah halaman.
+
 •	Performansi, mencakup banyaknya halaman yang harus dikunjungi.
+
 •	Aturan dalam setiap kunjungan agar server yang dikunjungi tidak kelebihan beban.
+
 •	Kegagalan, mencakup tidak tersedianya halaman yang dikunjungi, server down, timeout, maupun jebakan yang sengaja dibuat oleh webmaster.
+
 •	Seberapa jauh kedalaman sebuah website yang akan dikunjungi.
+
 •	Hal yang tak kalah pentingnya adalah kemampuan web crawler untuk mengikuti perkembangan teknologi web, dimana setiap kali teknologi baru muncul, web crawler harus dapat menyesuaikan diri agar dapat mengunjungi halaman web yang menggunakan teknologi baru tersebut. Proses sebuah web crawler untuk mendata link–link yang terdapat didalam sebuah halaman web menggunakan pendekatan regular expression. Crawler akan menelurusi setiap karakter yang ada untuk menemukan hyperlink tag html (<a>). Setiap hyperlink tag yang ditemukan diperiksa lebih lanjut apakah tag tersebut mengandung atribut nofollow rel, jika tidak ada maka diambil nilai yang terdapat didalam attribute href yang merupakan sebuah link baru.
 
 2.	Indexing System
